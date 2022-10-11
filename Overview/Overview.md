@@ -26,3 +26,4 @@ Spring Framework被划分成多个模块。应用程序可以选择需要的模�
 * 用于协调事务的JTA/JCA(如有必要)
 
 Spring Framework还支持依赖注入（JSR 330）和常用注解（JSR 250）规范。应用开发人员可以选择使用这些规范而不是Spring提供的特定于Spring的机制。
+从Spring Framework 5.0开始，Spring需要至少Java EE 7（如Servlet 3.1，JPA 2.1），同时如果在运行时遇到Java EE 8（如Servlet 4.0，JSON Binding API），也提供开箱即用的集成。这使得Spring可以与Tomcat 8，Tomcat 9，WebSphere 9 以及JBoss EAP 7 完全兼容。
