@@ -26,4 +26,13 @@ Spring Framework被划分成多个模块。应用程序可以选择需要的模�
 * 用于协调事务的JTA/JCA(如有必要)
 
 Spring Framework还支持依赖注入（JSR 330）和常用注解（JSR 250）规范。应用开发人员可以选择使用这些规范而不是Spring提供的特定于Spring的机制。
+
 从Spring Framework 5.0开始，Spring需要至少Java EE 7（如Servlet 3.1，JPA 2.1），同时如果在运行时遇到Java EE 8（如Servlet 4.0，JSON Binding API），也提供开箱即用的集成。这使得Spring可以与Tomcat 8，Tomcat 9，WebSphere 9 以及JBoss EAP 7 完全兼容。
+
+随着时间的发展，Java EE在应用程序开发上的角色已经发生改变。在Java EE和Spring的早期，创建好的应用程序是要部署在应用服务器上的。如今，有了Spring Boot的帮助，应用程序可以以devops和云友好的方式创建，其中内嵌了Servlet容器，并且很容易更改。从Spring Framework 5开始，WebFlux应用甚至可以直接不使用Servlet API，它能够运行在非Servlet容器上（如 Netty）。
+
+Spring还在继续创新和发展。除了Spring Framework之外，还有些其他项目，如Spring Boot、Spring Security、Spring Data、Spring Cloud、Spring Batch等。要注意每个项目都有它自己的源码库，问题追踪，发布节奏。
+
+## 3.设计哲学
+当你学习一个框架时，了解它做了什么的同时更重要的是了解它遵循的原则。以下是Spring的指导原则：
+* 在每个级别都提供选择。Spring让你能够尽可能得推迟设计决策。
